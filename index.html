@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:title" content="Boda Dreisser y Anyeli · 28 de noviembre">
+<meta property="og:description" content="Con mucho amor te invitamos a nuestra boda. Toca para ver tu invitación.">
+<meta property="og:image" content="https://bodadreisseryanyeli.github.io/Boda/img/foto1.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bodadreisseryanyeli.github.io/Boda/">
+<meta name="description" content="Con mucho amor te invitamos a nuestra boda. 28 de noviembre de 2026.">
+<meta name="theme-color" content="#fbf7f0">
+<style>*,*::before,*::after{box-sizing:border-box}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Boda Dreisser y Anyeli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@400;500&display=swap">
+<style>
+/* Layout: a single phone-width paper column; soft blush paper, stone arches, olive and taupe bands, navy accents */
+:root{
+  --paper:#fbf7f0; --paper-2:#fffdf9; --cream:#f3eadb; --champ:#e8dac2; --ink:#4e443b; --muted:#8b7d6e;
+  --gold:#b8996a; --mocha:#8c7458; --fabric:#fffaf2; --fabric-shade:#eadfcc; --glow:#ffe7b0;
+  --stone:var(--champ); --olive:var(--cream); --taupe:var(--champ); --navy:var(--mocha);
+  --script:"Pinyon Script","Great Vibes",cursive;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --caps:"Cinzel","Cormorant Garamond",Georgia,serif;
+  color-scheme:light;
+}
+body{background:radial-gradient(1200px 600px at 50% -10%,#fff6e3 0%,transparent 60%),var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.45}
+.page{max-width:480px;margin:0 auto;background:var(--paper);overflow:hidden;position:relative}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.caps{font-family:var(--caps);letter-spacing:.14em;text-transform:uppercase;font-size:12.5px}
+.script{font-family:var(--script);font-weight:400;line-height:1.05}
+.center{text-align:center}
+section{position:relative}
+.notice{background:var(--mocha);color:#fffaf2;font-family:var(--serif);font-size:14px;text-align:center;padding-block:8px}
+/* photo placeholders */
+.photo{position:relative;background:linear-gradient(160deg,#efe4d3,#d9c7ab);display:flex;align-items:center;justify-content:center;color:#8c7458;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .photo img{object-position:50% 30%}
+.duo .photo img{object-position:50% 12%}
+.arch .photo img{object-position:50% 18%}
+.photo .ph{display:flex;flex-direction:column;align-items:center;gap:6px;font-family:var(--caps);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.photo .ph svg{width:44px;height:44px}
+/* hero */
+.hero .photo{height:560px}
+.hero .photo .ph{margin-top:140px}
+.giftcard{padding:12px}
+.torn{display:block;width:100%;height:46px;margin-top:-45px;position:relative}
+/* player */
+.player{display:flex;flex-direction:column;align-items:center;gap:10px;padding-block:18px 8px}
+.bar{width:150px;height:3px;background:#d8c9c3;border-radius:2px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:22%;background:var(--ink);border-radius:2px}
+.bar b{position:absolute;left:22%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--ink)}
+.ctrls{display:flex;align-items:center;gap:22px;color:var(--ink)}
+.ctrls svg{width:16px;height:16px}
+.play{width:42px;height:42px;border-radius:50%;border:0;background:var(--mocha);color:#fff;display:grid;place-items:center;cursor:pointer}
+.play svg{width:16px;height:16px}
+.play:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+.note{font-size:17px;font-style:italic;color:var(--mocha);min-height:1em}
+/* blessing + names */
+.bless{padding-block:18px 10px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.bless p{max-width:30ch;margin:0;font-size:19px}
+.divider{display:flex;align-items:center;gap:8px;width:160px;color:var(--ink)}
+.divider span{flex:1;height:1px;background:currentColor;opacity:.55}
+.divider em{width:6px;height:6px;transform:rotate(45deg);background:currentColor}
+.names{font-size:64px;color:var(--ink);margin:0;text-wrap:balance}
+.names .amp{display:block;font-size:40px;margin:-6px 0}
+/* verse */
+.verse{padding-block:2px 18px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.vq{font-style:italic;font-size:19px;line-height:1.5;max-width:30ch;margin:0;color:var(--mocha);text-wrap:balance}
+.verse .caps{color:var(--gold)}
+/* countdown */
+.count{padding-block:14px 26px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.digits{display:flex;align-items:flex-start;gap:6px;font-size:40px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.digits .u{display:flex;flex-direction:column;align-items:center;min-width:52px}
+.digits .u small{font-family:var(--caps);font-size:8.5px;letter-spacing:.14em;color:var(--muted)}
+.digits .sep{padding-top:2px}
+.digits .u.s{color:var(--gold)}
+/* arch calendar */
+.arch{margin:0 auto;width:min(86%,380px);background:linear-gradient(180deg,#f3e8d6,#e6d6bd);border-radius:999px 999px 0 0;color:var(--ink);position:relative;padding-top:42px;display:flex;flex-direction:column;align-items:center;gap:4px;overflow:hidden}
+.arch .month{font-size:64px;color:var(--mocha)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px 6px;width:78%;font-size:12px;text-align:center;font-variant-numeric:tabular-nums;margin-top:6px}
+.cal .h{font-family:var(--caps);font-size:9px;letter-spacing:.08em;opacity:.85}
+.cal .d{position:relative;padding:3px 0}
+.cal .d.hl::before{content:"";position:absolute;inset:-4px -2px;border:1.4px solid var(--gold);border-radius:50% 50% 50% 50%/55% 55% 45% 45%}
+.arch .photo{width:100%;height:330px;margin-top:22px;background:linear-gradient(170deg,#f7efe2,#e3d3b8)}
+/* event */
+.event{padding-block:40px 30px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.event svg.rings{width:64px;height:44px;color:var(--ink)}
+.event h2{font-size:46px;margin:0}
+.event .time{font-family:var(--caps);font-size:13px;letter-spacing:.12em}
+.event .place{font-size:18px;margin:0}
+.event .addr{font-style:italic;font-size:15px;color:var(--muted);margin:0;max-width:32ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--navy);color:#fff;text-decoration:none;font-family:var(--serif);font-size:15px;padding:7px 26px;border-radius:999px;border:0;cursor:pointer}
+.event + .event{padding-top:0}
+/* photo arch over olive */
+.duo{padding-top:10px;display:flex;justify-content:center}
+.duo .photo{width:min(78%,340px);height:420px;border-radius:999px 999px 0 0;background:linear-gradient(160deg,#f5ecdd,#dccbb0)}
+/* dress code */
+.dress{background:var(--cream);color:var(--ink);margin-top:-1px}
+.dress::before{content:"";position:absolute;left:50%;top:-150px;transform:translateX(-50%);width:min(92%,420px);height:300px;background:var(--cream);border-radius:999px 999px 0 0;z-index:0}
+.dress .wrap{position:relative;z-index:1;padding-block:0 60px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.dress h2{font-size:44px;margin:0;color:var(--mocha)}
+.dress p{max-width:30ch;margin:0;font-size:17px}
+.couple{width:150px;height:184px}
+.swatches{display:flex;gap:10px;margin-top:6px}
+.swatches span{width:30px;height:30px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--champ)}
+/* gifts */
+.gift{background:var(--champ);color:var(--ink)}
+.wave{display:block;width:100%;height:34px}
+.gift .wrap{padding-block:26px 40px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.gift h2{font-size:44px;margin:0}
+.gift p{max-width:31ch;margin:0;font-size:17px}
+.gift svg.box{width:76px;height:76px}
+.giftcard{background:#fff;color:var(--ink);border-radius:22px;padding:18px 20px;width:min(86%,300px);display:flex;flex-direction:column;gap:6px;box-shadow:0 8px 24px rgba(60,40,30,.12)}
+.giftcard .k{font-family:var(--caps);font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.giftcard .v{font-size:18px;word-break:break-word}
+.copy{align-self:center;margin-top:6px;background:var(--mocha);color:#fff;border:0;border-radius:999px;padding:6px 18px;font-family:var(--serif);font-size:14px;cursor:pointer}
+/* rsvp */
+.rsvp .wrap{padding-block:34px 20px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.rsvp h2{font-size:48px;margin:0}
+.rsvp > .wrap > p{max-width:31ch;margin:0}
+form.card{background:#fff;border-radius:6px;padding:22px 20px 18px;width:100%;max-width:360px;text-align:left;display:flex;flex-direction:column;gap:12px;box-shadow:0 6px 22px rgba(60,40,30,.08)}
+form.card h3{font-family:var(--serif);font-weight:500;font-size:26px;margin:0}
+label.l{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:5px}
+input[type=text],select,textarea{font:inherit;font-size:16px;color:var(--ink);border:1px solid #cfc6c3;border-radius:2px;padding:7px 9px;background:#fff;width:100%;box-sizing:border-box}
+textarea{min-height:64px;resize:vertical}
+.opts{display:flex;flex-direction:column;gap:6px}
+.opt{display:flex;align-items:center;gap:10px;background:#f4eee4;padding:9px 11px;font-size:15px;cursor:pointer}
+.opt input{accent-color:var(--navy)}
+.opt:has(input:checked){background:#ead9bd}
+form .btn{background:var(--mocha);color:#fff;border-radius:6px;padding:10px;font-size:16px;width:100%}
+.fine{font-size:12px;color:var(--muted);text-align:center;margin:0}
+.err{color:#9b2c2c;font-size:14px;min-height:1em;margin:0}
+/* kids */
+.kids{margin:28px auto 0;width:min(88%,380px);background:var(--fabric);color:var(--ink);border:1px solid var(--champ);box-shadow:0 10px 30px rgba(140,116,88,.12);text-align:center;padding:30px 22px;display:flex;flex-direction:column;gap:8px;align-items:center}
+.kids h2{font-size:46px;margin:0;color:var(--mocha)}
+.kids p{margin:0;max-width:30ch;font-size:17px}
+.kids u{text-underline-offset:3px}
+/* thanks */
+.thanks{padding-block:34px 56px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.thanks .caps{max-width:28ch;font-size:12px}
+.thanks .script{font-size:56px;color:var(--mocha)}
+/* floral line art */
+.flora{position:absolute;pointer-events:none;color:#d8c6aa;opacity:.7}
+/* ---- decor: drapes, string lights, hanging white roses ---- */
+.ceiling{position:absolute;left:0;right:0;top:0;height:260px;z-index:3;pointer-events:none}
+.ceiling svg.drape{position:absolute;left:0;top:0;width:100%;height:120px}
+.bulb{position:absolute;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:#fff5d6;box-shadow:0 0 6px 3px rgba(255,220,150,.75),0 0 16px 6px rgba(255,214,140,.35)}
+.hang{position:absolute;top:0;transform-origin:50% 0}
+.hang i{display:block;width:1px;margin:0 auto;background:linear-gradient(#d9ccb8,#c9b89e)}
+.hang svg{display:block;width:38px;height:38px;margin:-3px auto 0;filter:drop-shadow(0 3px 4px rgba(120,95,70,.25))}
+.hang svg.sm{width:26px;height:26px}
+.archlights{position:absolute;inset:0;pointer-events:none}
+.bokeh{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,190,.55),rgba(255,236,190,0) 70%);pointer-events:none}
+@media (prefers-reduced-motion:no-preference){
+  .bulb{animation:twinkle 2.8s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:1}50%{opacity:.45}}
+  .hang{animation:sway 5.5s ease-in-out infinite}
+  @keyframes sway{0%,100%{transform:rotate(-2.2deg)}50%{transform:rotate(2.2deg)}}
+}
+@media (prefers-reduced-motion:no-preference){
+  .reveal{animation:rise .9s ease both}
+  @keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+}
+</style>
+</head>
+<body>
+
+
+<div class="page" id="top">
+  <div class="bokeh" style="width:220px;height:220px;left:-60px;top:900px"></div><div class="bokeh" style="width:180px;height:180px;right:-50px;top:1500px"></div><div class="bokeh" style="width:260px;height:260px;left:-80px;top:2600px"></div>
+  <div class="notice" id="notice" hidden>Vista previa con datos de ejemplo</div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="ceiling" id="ceiling" aria-hidden="true"></div>
+    <div class="photo" data-photo="0"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>Foto de los novios</div></div>
+    <svg class="torn" viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe5d4"/><stop offset=".5" stop-color="#fbf7f0"/></linearGradient></defs><path fill="url(#fab)" d="M0 18 Q50 46 100 18 Q150 46 200 18 Q250 46 300 18 Q350 46 400 18 L400 46 L0 46Z"/><path fill="none" stroke="#e3d5bf" stroke-width="1" d="M0 18 Q50 46 100 18 Q150 46 200 18 Q250 46 300 18 Q350 46 400 18"/></svg>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="wrap player">
+    <div class="caps">Dale play a nuestra canción</div>
+    <div class="bar"><i></i><b></b></div>
+    <div class="ctrls" aria-hidden="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>
+      <button class="play" id="play" type="button" aria-label="Reproducir canción"><svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></button>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/></svg>
+    </div>
+    <div class="note" id="songNote"></div>
+    <audio id="song" preload="none" loop></audio>
+  </section>
+
+  <!-- BLESSING + NAMES -->
+  <section class="wrap bless center">
+    <svg class="flora" style="left:-30px;top:10px;width:150px;height:260px" viewBox="0 0 100 180" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true"><path d="M50 180C48 130 30 100 10 70M38 120c-14-4-24 2-28 10 10 4 22 2 28-10zM28 95c-12-8-22-6-26 0 8 6 20 8 26 0zM44 140c10-12 22-14 30-10-6 10-18 14-30 10zM20 70c-4-14 2-26 10-30 4 12 0 24-10 30z"/></svg>
+    <p id="blessing">Con la bendición de Dios tenemos el honor de invitarlos a nuestra boda</p>
+    <div class="divider" aria-hidden="true"><span></span><em></em><span></span></div>
+    <h1 class="names script" id="names"><span id="n1">Dreisser</span><span class="amp">&amp;</span><span id="n2">Anyeli</span></h1>
+    <div class="divider" aria-hidden="true"><span></span><em></em><span></span></div>
+  </section>
+
+  <!-- VERSE -->
+  <section class="wrap verse center">
+    <p class="vq">“Mejores son dos que uno… porque si cayeren, el uno levantará a su compañero… y cordón de tres dobleces no presto se rompe.”</p>
+    <div class="caps">Eclesiastés 4:9-12</div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="wrap count">
+    <div class="caps">Faltan</div>
+    <div class="digits" role="timer" aria-live="off">
+      <div class="u"><span id="cd-d">0</span><small>Días</small></div><span class="sep">:</span>
+      <div class="u"><span id="cd-h">00</span><small>Horas</small></div><span class="sep">:</span>
+      <div class="u"><span id="cd-m">00</span><small>Minutos</small></div><span class="sep">:</span>
+      <div class="u s"><span id="cd-s">00</span><small>Segundos</small></div>
+    </div>
+  </section>
+
+  <!-- THE BIG DAY -->
+  <section>
+    <div class="arch"><div class="archlights" id="archLights" aria-hidden="true"></div>
+      <div class="caps">El gran día</div>
+      <div class="month script" id="month">Noviembre</div>
+      <div class="cal" id="cal" aria-label="Calendario del mes de la boda"></div>
+      <div class="photo" data-photo="1"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>Foto 2</div></div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <div id="events"></div>
+
+  <!-- PHOTO ARCH -->
+  <section class="duo">
+    <div class="photo" data-photo="2"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>Foto 3</div></div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="dress">
+    <div class="wrap">
+      <h2 class="script">Código de Vestimenta</h2>
+      <div class="caps" id="dressType">Formal</div>
+      <svg class="couple" viewBox="0 0 140 172" aria-hidden="true">
+        <!-- groom: tuxedo -->
+        <circle cx="48" cy="24" r="11" fill="#ecccb0"/><path d="M37 21c1-12 21-13 23-1-7-4-15-4-23 1z" fill="#2b221d"/>
+        <path d="M30 44q18-8 36 0l3 58H27z" fill="#3a312b"/>
+        <path d="M42 40h12l-6 26z" fill="#fffdf8"/><path d="M44 42l4 3 4-3v5l-4-2-4 2z" fill="#2b221d"/>
+        <path d="M40 41l8 25-12-20zM56 41l-8 25 12-20z" fill="#2b221d"/>
+        <path d="M30 100h17v62h-9zM49 100h17l-2 62h-9z" fill="#3a312b"/><path d="M36 160h12v5H34zM55 160h12l2 5H55z" fill="#1f1a16"/>
+        <path d="M66 52q8 10 10 26" stroke="#3a312b" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <!-- bride: evening gown -->
+        <path d="M80 30c-2 18 2 34 4 40l22 0c3-10 6-26 1-40-4-12-24-12-27 0z" fill="#d6b47a"/>
+        <circle cx="93" cy="28" r="10" fill="#f0d4bb"/>
+        <path d="M83 26c0-12 20-13 21 0-5-5-15-6-21 0z" fill="#d6b47a"/>
+        <path d="M87 44h13l-1 8q-6 3-11 0z" fill="#efd2b8"/>
+        <path d="M86 46l3-6M101 46l-3-6" stroke="#9c7f52" stroke-width="1"/>
+        <path d="M86 50q7 4 15 0l-2 30q4 18 18 58l6 26H66l7-26q14-40 16-58z" fill="#a8864f"/>
+        <path d="M93 52q-2 30-12 86M97 80q3 30 16 58" stroke="#c9a76a" stroke-width="1.4" fill="none" opacity=".8"/>
+        <path d="M66 164q28-8 57 0" stroke="#8e7140" stroke-width="2" fill="none"/>
+        <circle cx="90" cy="60" r="1" fill="#fff6dc"/><circle cx="96" cy="70" r="1" fill="#fff6dc"/><circle cx="88" cy="96" r="1" fill="#fff6dc"/><circle cx="102" cy="118" r="1.2" fill="#fff6dc"/><circle cx="80" cy="140" r="1" fill="#fff6dc"/>
+        <path d="M86 54q-8 12-12 22" stroke="#efd2b8" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <p id="dressText">Queremos que te sientas cómodo y disfrutes con nosotros. Te invitamos a inspirar tu atuendo en nuestra paleta de colores.</p>
+      <div class="swatches" id="swatches"></div>
+    </div>
+  </section>
+
+  <!-- GIFTS -->
+  <section class="gift">
+    <svg class="wave" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true"><path fill="var(--olive)" d="M0 0h400v14c-25 14-50 14-75 0s-50-14-75 0-50 14-75 0-50-14-75 0-50 14-75 0z"/></svg>
+    <div class="wrap">
+      <svg class="box" viewBox="0 0 64 64" fill="none" stroke="#8c7458" stroke-width="1.6" aria-hidden="true"><rect x="10" y="26" width="44" height="30"/><rect x="7" y="18" width="50" height="9"/><path d="M32 18v38"/><path d="M32 18c-6-10-18-10-16-2 2 5 10 3 16 2zM32 18c6-10 18-10 16-2-2 5-10 3-16 2z"/></svg>
+      <h2 class="script">Sugerencia de Regalo</h2>
+      <p id="giftText">Esperamos compartir contigo este gran paso. Como regalo de bodas, para tu comodidad, hemos dispuesto la modalidad de regalo en efectivo o transferencia para nuestro inicio como esposos.</p>
+      <div class="giftcard" id="giftCard"></div>
+    </div>
+    <svg class="wave" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="transform:scaleY(-1)"><path fill="var(--paper)" d="M0 0h400v14c-25 14-50 14-75 0s-50-14-75 0-50 14-75 0-50-14-75 0-50 14-75 0z"/></svg>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp" id="confirmar">
+    <div class="wrap">
+      <h2 class="script">Confirmación</h2>
+      <p>Su presencia es nuestro mayor regalo. Con el deseo de compartir este día tan especial con ustedes, les solicitamos de la manera más atenta confirmar su compañía para asegurar cada detalle de su estancia.</p>
+      <form class="card" id="rsvpForm" novalidate>
+        <h3>¿Nos acompañan?</h3>
+        <label class="l" for="rName">Tu nombre<input type="text" id="rName" autocomplete="name" placeholder="Nombre y apellido"></label>
+        <div class="opts" role="radiogroup" aria-label="Asistencia">
+          <label class="opt"><input type="radio" name="att" id="att1" value="Sí, allí estaré">Sí, allí estaré</label>
+          <label class="opt"><input type="radio" name="att" id="att2" value="Aún no estoy seguro/a">Aún no estoy seguro/a</label>
+          <label class="opt"><input type="radio" name="att" id="att3" value="Me es imposible asistir">Me es imposible asistir</label>
+        </div>
+        <label class="l" for="rCount">¿Cuántas personas confirmas?<select id="rCount"></select></label>
+        <label class="l" for="rMsg">Mensaje para los novios (opcional)<textarea id="rMsg"></textarea></label>
+        <p class="err" id="rErr" role="alert"></p>
+        <button class="btn" type="submit">Confirmar por WhatsApp</button>
+        <p class="fine" id="rFine"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- KIDS -->
+  <section class="kids" id="kids">
+    <svg viewBox="0 0 64 48" width="64" height="48" aria-hidden="true"><path d="M30 6a18 18 0 1 0 22 26A16 16 0 0 1 30 6z" fill="#e8dac2" stroke="#b8996a" stroke-width="1.2"/><path d="M50 6l1.5 3.5L55 11l-3.5 1.5L50 16l-1.5-3.5L45 11l3.5-1.5zM10 10l1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1zM58 26l.8 1.8 1.8.8-1.8.8-.8 1.8-.8-1.8-1.8-.8 1.8-.8z" fill="#b8996a"/></svg>
+    <h2 class="script">Niños, dulces sueños</h2>
+    <p>Amamos a sus pequeños, pero esta noche será solo para adultos. Agradecemos su comprensión al celebrar con nosotros en una recepción reservada <u>únicamente para adultos.</u></p>
+  </section>
+
+  <!-- THANKS -->
+  <section class="wrap thanks">
+    <div class="caps">Para nosotros sería un honor contar con su presencia</div>
+    <div class="script">¡Muchas Gracias!</div>
+  </section>
+</div>
+
+<script>
+const PHOTO1="img/foto1.jpg";
+const PHOTO2="img/foto2.jpg";
+const PHOTO3="img/foto3.jpg";
+const SONG="cancion.m4a";
+const QRIMG="img/qr.jpg";
+</script>
+<script>
+/* ====== DATOS DE LA BODA (editar aquí) ====== */
+const CONFIG = {
+  example: false,
+  bride: "Anyeli", groom: "Dreisser",
+  date: "2026-11-28T20:00:00",
+  blessing: "Con la bendición de Dios tenemos el honor de invitarlos a nuestra boda",
+  events: [
+    { title: "Ceremonia", icon: "rings", time: "8:00 PM", place: "Oasis de Paz", address: "Boda Eclesiástica", maps: "https://maps.app.goo.gl/UoZZLDD9ys772kX97" },
+    { title: "Recepción", icon: "glass", time: "9:00 PM", place: "Club Bella Vista", address: "", maps: "https://maps.app.goo.gl/76ro2kTd3okKMZ3n7" }
+  ],
+  dress: { type: "Formal", text: "Nuestra boda será en tonos blanco y crema. Te invitamos a vestir elegante; el color blanco lo reservamos para la novia.", colors: ["#fffdf8", "#f3eadb", "#e8dac2", "#b8996a"] },
+  gift: { text: "Esperamos compartir contigo este gran paso. Como regalo de bodas, para tu comodidad, hemos dispuesto la modalidad de regalo en efectivo o transferencia para nuestro inicio como esposos.",
+          qr: QRIMG, qrCaption: "Escanea el código QR desde tu app bancaria (Bancamiga · Suiche 7B)", zelle: "Diegojp3033@gmail.com" },
+  rsvp: { whatsapp: "584220151124", whatsappShown: "0422-015-1124", maxGuests: 6, deadline: "" },
+  kidsAllowed: false,
+  songTitle: "Caminar de tu mano",
+  song: SONG,
+  photos: [PHOTO1, PHOTO2, PHOTO3]
+};
+/* ============================================ */
+
+const $ = id => document.getElementById(id);
+const MONTHS = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+const wedding = new Date(CONFIG.date);
+
+$("notice").hidden = !CONFIG.example;
+$("n1").textContent = CONFIG.groom; $("n2").textContent = CONFIG.bride;
+$("blessing").textContent = CONFIG.blessing;
+$("month").textContent = MONTHS[wedding.getMonth()];
+$("dressType").textContent = CONFIG.dress.type; $("dressText").textContent = CONFIG.dress.text;
+$("giftText").textContent = CONFIG.gift.text;
+$("kids").hidden = CONFIG.kidsAllowed;
+
+// photos
+document.querySelectorAll("[data-photo]").forEach(el => {
+  const src = CONFIG.photos[+el.dataset.photo];
+  if (src) { el.innerHTML = ""; const im = new Image(); im.src = src; im.alt = "Foto de los novios"; el.appendChild(im); }
+});
+
+// calendar
+(function(){
+  const cal = $("cal"), y = wedding.getFullYear(), m = wedding.getMonth();
+  ["DO","LU","MA","MI","JU","VI","SA"].forEach(h => { const e = document.createElement("div"); e.className = "h"; e.textContent = h; cal.appendChild(e); });
+  const first = new Date(y, m, 1).getDay(), days = new Date(y, m + 1, 0).getDate();
+  for (let i = 0; i < first; i++) cal.appendChild(document.createElement("div"));
+  for (let d = 1; d <= days; d++) { const e = document.createElement("div"); e.className = "d" + (d === wedding.getDate() ? " hl" : ""); e.textContent = d; cal.appendChild(e); }
+})();
+
+// countdown
+function tick(){
+  let s = Math.max(0, Math.floor((wedding - new Date()) / 1000));
+  const d = Math.floor(s / 86400); s -= d * 86400; const h = Math.floor(s / 3600); s -= h * 3600; const mi = Math.floor(s / 60); s -= mi * 60;
+  $("cd-d").textContent = d; $("cd-h").textContent = String(h).padStart(2, "0"); $("cd-m").textContent = String(mi).padStart(2, "0"); $("cd-s").textContent = String(s).padStart(2, "0");
+}
+tick(); setInterval(tick, 1000);
+
+// events
+const ICONS = {
+  rings: '<svg class="rings" viewBox="0 0 64 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="24" cy="26" r="14"/><circle cx="40" cy="26" r="14"/><path d="M20 10l4-6 4 6"/></svg>',
+  glass: '<svg class="rings" viewBox="0 0 64 44" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 4h12l-1 12a5 5 0 0 1-10 0zM24 21v17M18 38h12M34 4h12l-1 12a5 5 0 0 1-10 0zM40 21v17M34 38h12"/></svg>'
+};
+CONFIG.events.forEach(ev => {
+  const s = document.createElement("section"); s.className = "wrap event center";
+  s.innerHTML = ICONS[ev.icon] || ICONS.rings;
+  const h = document.createElement("h2"); h.className = "script"; h.textContent = ev.title; s.appendChild(h);
+  const t = document.createElement("div"); t.className = "time"; t.textContent = ev.time; s.appendChild(t);
+  if (ev.place) { const p = document.createElement("p"); p.className = "place"; p.textContent = ev.place; s.appendChild(p); }
+  if (ev.address) { const a = document.createElement("p"); a.className = "addr"; a.textContent = ev.address; s.appendChild(a); }
+  if (ev.maps) { const b = document.createElement("a"); b.className = "btn"; b.href = ev.maps; b.target = "_blank"; b.rel = "noopener"; b.textContent = "Ver ubicación"; s.appendChild(b); }
+  $("events").appendChild(s);
+});
+
+// palette
+CONFIG.dress.colors.forEach(c => { const sp = document.createElement("span"); sp.style.background = c; $("swatches").appendChild(sp); });
+
+// gift card
+(function(){
+  const card = $("giftCard");
+  if (CONFIG.gift.qr) {
+    const im = new Image(); im.src = CONFIG.gift.qr; im.alt = "Código QR para regalo"; im.style.cssText = "width:100%;border-radius:12px;display:block";
+    const cap = document.createElement("div"); cap.className = "k"; cap.style.textAlign = "center"; cap.style.marginTop = "6px"; cap.textContent = CONFIG.gift.qrCaption;
+    card.append(im, cap);
+  }
+  if (CONFIG.gift.zelle) {
+    const sep = document.createElement("div"); sep.style.cssText = "height:1px;background:#eadfcc;margin:10px 0 4px";
+    const k = document.createElement("div"); k.className = "k"; k.style.textAlign = "center"; k.textContent = "Zelle";
+    const v = document.createElement("div"); v.className = "v"; v.style.textAlign = "center"; v.style.userSelect = "all"; v.textContent = CONFIG.gift.zelle;
+    const b = document.createElement("button"); b.type = "button"; b.className = "copy"; b.textContent = "Copiar correo Zelle";
+    b.addEventListener("click", () => {
+      const ok = () => { b.textContent = "Copiado"; setTimeout(() => b.textContent = "Copiar correo Zelle", 1800); };
+      const sel = () => { const r = document.createRange(); r.selectNodeContents(v); const g = getSelection(); g.removeAllRanges(); g.addRange(r); b.textContent = "Mantén presionado para copiar"; };
+      try { navigator.clipboard.writeText(CONFIG.gift.zelle).then(ok).catch(sel); } catch (e) { sel(); }
+    });
+    card.append(sep, k, v, b);
+  }
+})();
+
+// rsvp
+for (let i = 1; i <= CONFIG.rsvp.maxGuests; i++) { const o = document.createElement("option"); o.value = i; o.textContent = i === 1 ? "1 persona" : i + " personas"; $("rCount").appendChild(o); }
+$("rFine").textContent = (CONFIG.rsvp.deadline ? "Por favor confirma antes del " + CONFIG.rsvp.deadline + ". " : "") + (CONFIG.rsvp.whatsapp ? "Se abrirá WhatsApp con tu mensaje listo para enviar al " + CONFIG.rsvp.whatsappShown + "." : "Se abrirá WhatsApp con tu mensaje listo para enviar.");
+$("rsvpForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("rName").value.trim(); const att = document.querySelector('input[name="att"]:checked');
+  if (!name) { $("rErr").textContent = "Escribe tu nombre para confirmar."; $("rName").focus(); return; }
+  if (!att) { $("rErr").textContent = "Elige una opción de asistencia."; return; }
+  $("rErr").textContent = "";
+  let msg = "Hola, soy " + name + ". Confirmación para la boda de " + CONFIG.groom + " y " + CONFIG.bride + ": " + att.value + ".";
+  if (att.value.startsWith("Sí")) msg += " Personas: " + $("rCount").value + ".";
+  const extra = $("rMsg").value.trim(); if (extra) msg += " Mensaje: " + extra;
+  const url = "https://wa.me/" + CONFIG.rsvp.whatsapp + "?text=" + encodeURIComponent(msg);
+  const a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove();
+});
+
+
+// ===== decor: drapes, lights, hanging white roses =====
+(function(){
+  const ROSE = (cls) => '<svg class="'+cls+'" viewBox="0 0 40 40"><path d="M6 26c4-9 11-9 14-6-5 4-9 6-14 6z" fill="#c8cfb4"/><path d="M34 26c-4-9-11-9-14-6 5 4 9 6 14 6z" fill="#bcc5a6"/><circle cx="20" cy="19" r="14" fill="#fffdf8" stroke="#e7dbc6" stroke-width="1"/><path d="M8 17c3-7 9-10 12-10s9 3 12 10c-4-3-8-4-12-4s-8 1-12 4z" fill="#fff" stroke="#eadfcc" stroke-width=".8"/><circle cx="20" cy="19" r="8.5" fill="#fffaf0" stroke="#e6d8bf" stroke-width=".9"/><path d="M20 13c4 0 6 3 5 6s-5 4-7 2-1-5 2-5 3 3 1 4" fill="none" stroke="#dccbae" stroke-width="1.1" stroke-linecap="round"/></svg>';
+  const c = $("ceiling");
+  c.innerHTML = '<svg class="drape" viewBox="0 0 400 120" preserveAspectRatio="none"><defs><linearGradient id="dr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffaf2"/><stop offset=".7" stop-color="#f3e9d8"/><stop offset="1" stop-color="#e7dac4"/></linearGradient></defs>'
+    + '<path d="M0 0H400V14Q333 96 266 22Q200 96 133 22Q66 96 0 14Z" fill="url(#dr)"/>'
+    + '<path d="M0 14Q66 96 133 22M133 22Q200 96 266 22M266 22Q333 96 400 14" fill="none" stroke="#e2d3bb" stroke-width="1.2"/>'
+    + '<path d="M20 10Q66 70 115 18M150 18Q200 70 250 18M285 18Q333 70 380 10" fill="none" stroke="#ece1cf" stroke-width="1"/>'
+    + '<path d="M0 0Q14 70 6 150L0 150Z M400 0Q386 70 394 150L400 150Z" fill="#f6eee1"/></svg>';
+  // bulbs along each swag
+  const swags = [[0,14,66,96,133,22],[133,22,200,96,266,22],[266,22,333,96,400,14]];
+  swags.forEach(([x0,y0,cx,cy,x1,y1]) => {
+    for (let i = 1; i < 9; i++) {
+      const t = i / 9, x = (1-t)*(1-t)*x0 + 2*(1-t)*t*cx + t*t*x1, y = (1-t)*(1-t)*y0 + 2*(1-t)*t*cy + t*t*y1;
+      const b = document.createElement("span"); b.className = "bulb";
+      b.style.left = (x / 4) + "%"; b.style.top = (y * 0.98 + 4) + "px"; b.style.animationDelay = (Math.random() * 2.8).toFixed(2) + "s";
+      c.appendChild(b);
+    }
+  });
+  // hanging roses
+  [[8,70,1],[19,150,2],[30,95,1],[41,190,2],[52,120,1],[61,210,2],[72,85,1],[83,165,2],[93,110,1]].forEach(([x,len,n],k) => {
+    const h = document.createElement("div"); h.className = "hang";
+    h.style.left = "calc(" + x + "% - 19px)"; h.style.animationDelay = (-k * 0.7) + "s";
+    let html = '<i style="height:' + len + 'px"></i>' + ROSE("");
+    if (n === 2) html += '<i style="height:18px"></i>' + ROSE("sm");
+    h.innerHTML = html; c.appendChild(h);
+  });
+  // lights along the arch
+  function archLights(){
+    const box = $("archLights"); if (!box) return; box.innerHTML = "";
+    const w = box.parentElement.clientWidth, r = w / 2 - 12;
+    for (let i = 0; i <= 18; i++) {
+      const a = Math.PI + Math.PI * i / 18, b = document.createElement("span"); b.className = "bulb";
+      b.style.left = (w / 2 + r * Math.cos(a)) + "px"; b.style.top = (w / 2 + r * Math.sin(a)) + "px"; b.style.animationDelay = (Math.random() * 2.8).toFixed(2) + "s";
+      box.appendChild(b);
+    }
+  }
+  archLights(); addEventListener("resize", archLights);
+})();
+
+// music: decode the song with Web Audio (works on iPhone and Android), fallback to <audio> with a blob URL
+(function(){
+  const audio = $("song"), btn = $("play"), icon = $("playIcon"), note = $("songNote");
+  note.textContent = "♪ " + CONFIG.songTitle;
+  const PLAY = '<path d="M7 4v16l13-8z"/>', PAUSE = '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/>';
+  let ctx = null, buffer = null, src = null, playing = false, loading = null, useTag = false;
+  const setUI = on => { icon.innerHTML = on ? PAUSE : PLAY; btn.setAttribute("aria-label", on ? "Pausar canción" : "Reproducir canción"); note.textContent = "♪ " + CONFIG.songTitle; };
+  function load(){
+    if (!loading) loading = fetch(CONFIG.song).then(r => { if (!r.ok) throw new Error("http " + r.status); return r.arrayBuffer(); })
+      .then(ab => {
+        if (ctx) return new Promise((res, rej) => ctx.decodeAudioData(ab.slice(0), b => { buffer = b; res(); }, () => { useTag = true; audio.src = URL.createObjectURL(new Blob([ab], { type: "audio/mp4" })); res(); }));
+        useTag = true; audio.src = URL.createObjectURL(new Blob([ab], { type: "audio/mp4" }));
+      });
+    return loading;
+  }
+  function startBuffer(){
+    src = ctx.createBufferSource(); src.buffer = buffer; src.loop = true; src.connect(ctx.destination); src.start(0);
+  }
+  btn.addEventListener("click", () => {
+    if (!CONFIG.song) return;
+    if (!ctx) { try { const AC = window.AudioContext || window.webkitAudioContext; if (AC) ctx = new AC(); } catch (e) { ctx = null; } }
+    if (playing) {
+      if (useTag) audio.pause(); else if (ctx) ctx.suspend();
+      playing = false; setUI(false); return;
+    }
+    if (ctx && ctx.state === "suspended") ctx.resume();
+    note.textContent = "Cargando canción…";
+    load().then(() => {
+      if (useTag) return audio.play().then(() => { playing = true; setUI(true); });
+      if (!src) startBuffer(); else ctx.resume();
+      playing = true; setUI(true);
+    }).catch(() => { note.textContent = "No se pudo cargar la canción. Toca de nuevo."; loading = null; });
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -104,6 +104,8 @@ section{position:relative}
 .dress p{max-width:30ch;margin:0;font-size:17px}
 .couple{width:150px;height:184px}
 .swatches{display:flex;gap:10px;margin-top:6px}
+.bride-note{display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:8px 18px;border-radius:999px;background:#fff;border:1px solid var(--champ);font-size:16px;color:var(--mocha)}
+.bride-note .dot{width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--gold)}
 .swatches span{width:30px;height:30px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--champ)}
 /* gifts */
 .gift{background:var(--champ);color:var(--ink)}
@@ -264,7 +266,7 @@ form .btn{background:var(--mocha);color:#fff;border-radius:6px;padding:10px;font
         <path d="M86 54q-8 12-12 22" stroke="#efd2b8" stroke-width="5" stroke-linecap="round" fill="none"/>
       </svg>
       <p id="dressText">Queremos que te sientas cómodo y disfrutes con nosotros. Te invitamos a inspirar tu atuendo en nuestra paleta de colores.</p>
-      <div class="swatches" id="swatches"></div>
+      <div class="bride-note"><span class="dot"></span>Blanco: reservado para la novia</div>
     </div>
   </section>
 
@@ -334,7 +336,7 @@ const CONFIG = {
     { title: "Ceremonia", icon: "rings", time: "8:00 PM", place: "Oasis de Paz", address: "Boda Eclesiástica", maps: "https://maps.app.goo.gl/UoZZLDD9ys772kX97" },
     { title: "Recepción", icon: "glass", time: "9:00 PM", place: "Club Bella Vista", address: "", maps: "https://maps.app.goo.gl/76ro2kTd3okKMZ3n7" }
   ],
-  dress: { type: "Formal", text: "Nuestra boda será en tonos blanco y crema. Te invitamos a vestir elegante; el color blanco lo reservamos para la novia.", colors: ["#fffdf8", "#f3eadb", "#e8dac2", "#b8996a"] },
+  dress: { type: "Formal", text: "Te invitamos a vestir elegante. Puedes usar el color que prefieras; solo te pedimos no vestir de blanco, ya que está reservado únicamente para la novia.", colors: [] },
   gift: { text: "Esperamos compartir contigo este gran paso. Como regalo de bodas, para tu comodidad, hemos dispuesto la modalidad de regalo en efectivo o transferencia para nuestro inicio como esposos.",
           qr: QRIMG, qrCaption: "Escanea el código QR desde tu app bancaria (Bancamiga · Suiche 7B)", zelle: "Diegojp3033@gmail.com" },
   rsvp: { whatsapp: "584220151124", whatsappShown: "0422-015-1124", maxGuests: 6, deadline: "" },
@@ -397,7 +399,7 @@ CONFIG.events.forEach(ev => {
 });
 
 // palette
-CONFIG.dress.colors.forEach(c => { const sp = document.createElement("span"); sp.style.background = c; $("swatches").appendChild(sp); });
+
 
 // gift card
 (function(){

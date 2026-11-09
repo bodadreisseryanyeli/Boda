@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Curso de Meta Ads para Emprendedores</title>
+<meta name="description" content="Aprende a crear anuncios en Facebook e Instagram que traen clientes reales a tu negocio. Curso práctico para emprendedores y dueños de negocio.">
+<meta property="og:title" content="Curso de Meta Ads para Emprendedores">
+<meta property="og:description" content="Anuncios en Facebook e Instagram que traen clientes. Paso a paso, sin tecnicismos.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f1b3d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#f6f7fb; --surface:#ffffff; --ink:#111a33; --muted:#5a6482; --line:#e3e7f1;
+  --navy:#0f1b3d; --navy-2:#1a2a5c; --accent:#2f6bff; --accent-2:#6f9bff; --lime:#c6f36b; --warn:#c0392b; --ok:#1f9d55;
+  --radius:16px;
+  font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4.5vw,40px);font-weight:800}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.lead{color:var(--muted);font-size:18px;max-width:60ch}
+section{padding-block:72px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:15px 26px;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--lime);color:var(--navy);box-shadow:0 8px 24px rgba(198,243,107,.35)}
+.btn-primary:hover{box-shadow:0 10px 28px rgba(198,243,107,.5)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-wa{background:#25d366;color:#06301a}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(15,27,61,.92);backdrop-filter:saturate(1.4) blur(10px);color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.brand i{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--lime));display:inline-block}
+.nav .btn{padding:9px 18px;font-size:14px}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% -10%,rgba(47,107,255,.45),transparent 60%),radial-gradient(700px 400px at -10% 110%,rgba(198,243,107,.18),transparent 60%),var(--navy);color:#fff;padding-block:64px 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(30px,7.5vw,60px);font-weight:800;overflow-wrap:break-word}
+.hero h1 span{color:var(--lime)}
+.hero p{color:#c9d3f0;font-size:19px;max-width:52ch;margin:20px 0 28px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{font-size:14px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#dfe6fb}
+.mock{background:linear-gradient(180deg,#1d2e66,#14224d);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.mock .row{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:#aebbe3}
+.mock .big{font-size:34px;font-weight:800;color:#fff;margin:6px 0 2px}
+.mock .bars{display:flex;align-items:flex-end;gap:8px;height:120px;margin:18px 0 12px}
+.mock .bars span{flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,var(--accent-2),var(--accent))}
+.mock .bars span:last-child{background:linear-gradient(180deg,var(--lime),#9ad13f)}
+.mock .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mock .kpi{background:rgba(255,255,255,.06);border-radius:12px;padding:10px}
+.mock .kpi b{display:block;color:#fff;font-size:17px}
+.mock .kpi small{color:#9fb0de;font-size:12px}
+.mock .note{font-size:12px;color:#8193c7;margin-top:12px;text-align:center}
+
+/* cards */
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.card h3{font-size:19px;font-weight:700;margin-bottom:6px}
+.card p{margin:0;color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#eaf0ff;color:var(--accent);margin-bottom:14px}
+.ico svg{width:22px;height:22px}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+
+/* modules */
+.mods{counter-reset:m;display:grid;gap:12px}
+.mod{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.mod::before{counter-increment:m;content:counter(m,decimal-leading-zero);font-weight:800;font-size:20px;color:var(--accent);background:#eaf0ff;border-radius:12px;height:52px;display:grid;place-items:center}
+.mod h3{font-size:18px;margin-bottom:4px}
+.mod p{margin:0;color:var(--muted);font-size:16px}
+
+/* includes */
+.dark{background:var(--navy);color:#fff}
+.dark .lead{color:#c9d3f0}
+.dark .eyebrow{color:var(--lime)}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.list li{display:flex;gap:12px;align-items:flex-start}
+.list li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%230f1b3d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.price{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:28px}
+.price .tag{font-size:14px;color:#aebbe3}
+.price .amount{font-size:44px;font-weight:800;margin:4px 0}
+.price .meta{color:#c9d3f0;font-size:15px;margin-bottom:20px}
+.price .btn{width:100%}
+
+/* faq */
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+details+details{margin-top:10px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--muted)}
+
+/* form */
+.signup .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+form{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:16px;box-shadow:0 20px 50px rgba(17,26,51,.08)}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:#fbfcff;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(47,107,255,.15)}
+textarea{min-height:90px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;background:var(--navy);color:#fff}
+form .btn[disabled]{opacity:.6;cursor:wait}
+.err{color:var(--warn);font-size:14px;min-height:1em;margin:0}
+.fine{color:var(--muted);font-size:13px;margin:0;text-align:center}
+.hp{position:absolute;left:-9999px}
+.done{text-align:center;display:grid;gap:12px;justify-items:center}
+.done .ok{width:56px;height:56px;border-radius:50%;background:#e4f7ec;color:var(--ok);display:grid;place-items:center}
+
+footer{background:var(--navy);color:#8f9cc4;font-size:14px;padding-block:28px;text-align:center}
+
+/* floating whatsapp */
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.fab svg{width:30px;height:30px}
+
+@media (max-width:860px){
+  section{padding-block:56px}
+  .hero .wrap,.signup .wrap{grid-template-columns:minmax(0,1fr);gap:36px}
+  .wrap>*{min-width:0}
+  .g3,.g2{grid-template-columns:minmax(0,1fr)}
+  .nav .btn{display:none}
+}
+@media (max-width:420px){.two{grid-template-columns:1fr}.hero .ctas{flex-direction:column}.hero .ctas .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="brand"><i aria-hidden="true"></i><span id="brandName">Curso Meta Ads</span></div>
+    <a class="btn btn-primary" href="#inscripcion">Quiero inscribirme</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" style="color:var(--lime)">Para emprendedores y dueños de negocio</span>
+        <h1 style="margin-top:14px">Anuncios en Facebook e Instagram que <span>traen clientes</span>, no solo “me gusta”.</h1>
+        <p>Aprende paso a paso a crear, lanzar y medir campañas en Meta Ads para tu propio negocio. Sin tecnicismos, sin depender de una agencia y sin desperdiciar tu presupuesto.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#inscripcion">Reservar mi cupo</a>
+          <a class="btn btn-ghost" href="#temario">Ver el temario</a>
+        </div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="row"><span>Campaña · Mensajes a WhatsApp</span><span>Últimos 7 días</span></div>
+        <div class="big">Tu panel de resultados</div>
+        <div class="row"><span>Así se verá lo que aprenderás a leer</span></div>
+        <div class="bars"><span style="height:30%"></span><span style="height:42%"></span><span style="height:38%"></span><span style="height:55%"></span><span style="height:63%"></span><span style="height:72%"></span><span style="height:88%"></span></div>
+        <div class="kpis">
+          <div class="kpi"><b>Alcance</b><small>personas</small></div>
+          <div class="kpi"><b>Conversaciones</b><small>iniciadas</small></div>
+          <div class="kpi"><b>Costo</b><small>por resultado</small></div>
+        </div>
+        <div class="note">Ilustración de ejemplo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">¿Es para ti?</span>
+        <h2>Este curso es para ti si…</h2>
+      </div>
+      <div class="grid g3">
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg></div><h3>Tienes un negocio o emprendimiento</h3><p>Vendes productos o servicios y quieres que más personas te encuentren en redes.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Has “promocionado” sin resultados</h3><p>Le diste al botón de promocionar, gastaste dinero y no supiste qué pasó.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg></div><h3>Quieres controlar tu publicidad</h3><p>Prefieres entender qué funciona y decidir tú mismo cuánto invertir y en qué.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMARIO -->
+  <section id="temario" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Temario</span>
+        <h2>Lo que vas a aprender</h2>
+        <p class="lead">Un recorrido práctico, desde cero hasta tener tu primera campaña funcionando y saber mejorarla.</p>
+      </div>
+      <div class="mods" id="mods"></div>
+    </div>
+  </section>
+
+  <!-- INCLUYE + PRECIO -->
+  <section class="dark">
+    <div class="wrap grid g2" style="gap:48px;align-items:center">
+      <div>
+        <span class="eyebrow">Qué incluye</span>
+        <h2 style="margin:12px 0 24px">Todo lo que necesitas para lanzar tu primera campaña</h2>
+        <ul class="list" id="includes"></ul>
+      </div>
+      <div class="price">
+        <div class="tag">Inversión</div>
+        <div class="amount" id="price"></div>
+        <div class="meta" id="priceMeta"></div>
+        <a class="btn btn-primary" href="#inscripcion">Reservar mi cupo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap" style="max-width:780px">
+      <div class="head">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Resolvemos tus dudas</h2>
+      </div>
+      <div id="faq"></div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCIÓN -->
+  <section class="signup" id="inscripcion" style="padding-top:0">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Inscripción</span>
+        <h2 style="margin:12px 0 16px">Reserva tu cupo</h2>
+        <p class="lead">Déjanos tus datos y te contactamos por WhatsApp con toda la información del curso: fechas, forma de pago y acceso.</p>
+        <ul class="list" style="margin-top:24px">
+          <li>Respuesta personal, sin compromiso</li>
+          <li>Cupos limitados por grupo</li>
+          <li>Tus datos solo se usan para contactarte sobre el curso</li>
+        </ul>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <div id="formFields" style="display:grid;gap:16px">
+          <label>Nombre completo<input id="fName" name="nombre" autocomplete="name" required></label>
+          <div class="two">
+            <label>WhatsApp<input id="fPhone" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="0412-000-0000" required></label>
+            <label>Correo<input id="fEmail" name="email" type="email" autocomplete="email" placeholder="tu@correo.com"></label>
+          </div>
+          <label>¿Cuál es tu negocio?<input id="fBiz" name="negocio" placeholder="Ej.: tienda de ropa, repostería, consultorio"></label>
+          <label>¿Has hecho anuncios antes?
+            <select id="fLevel" name="experiencia">
+              <option>Nunca he hecho anuncios</option>
+              <option>He usado el botón “Promocionar”</option>
+              <option>He usado el Administrador de anuncios</option>
+            </select>
+          </label>
+          <label><span>Mensaje <small>(opcional)</small></span><textarea id="fMsg" name="mensaje" placeholder="¿Qué te gustaría lograr con tus anuncios?"></textarea></label>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="err" id="fErr" role="alert"></p>
+          <button class="btn" type="submit" id="fBtn">Enviar y continuar por WhatsApp</button>
+          <p class="fine" id="fFine"></p>
+        </div>
+        <div class="done" id="formDone" hidden>
+          <div class="ok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h3 style="font-size:22px">¡Listo, recibimos tus datos!</h3>
+          <p class="lead" style="margin:0">Te estamos llevando a WhatsApp para terminar tu inscripción. Si no se abre, toca el botón.</p>
+          <a class="btn btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> <span id="footName"></span> · Este curso no está afiliado ni patrocinado por Meta Platforms, Inc.</div>
+</footer>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4a3.7 3.7 0 0 0-1.2 2.8c0 1.6 1.2 3.2 1.4 3.4s2.3 3.6 5.6 5c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.6s.3-1.4.2-1.6-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+/* ===== Edita aquí los datos del curso ===== */
+const CONFIG = {
+  courseName: "Curso de Meta Ads para Emprendedores",
+  brand: "Curso Meta Ads",
+  whatsapp: "584220151124",        // número con código de país, sin + ni espacios
+  whatsappShown: "0422-015-1124",
+  // Clave de Web3Forms (https://web3forms.com). Con ella, cada inscripción llega a tu correo.
+  // Si está vacía, el formulario solo abre WhatsApp.
+  web3formsKey: "",
+  price: "Consultar",
+  priceMeta: "Escríbenos para conocer el precio, las fechas del próximo grupo y las formas de pago.",
+  chips: ["100% práctico", "Desde cero", "Clases en vivo y grabadas", "Para cualquier tipo de negocio"],
+  modules: [
+    ["Fundamentos de Meta Ads", "Cómo funciona la publicidad en Facebook e Instagram y la diferencia entre “Promocionar” y el Administrador de anuncios."],
+    ["Configuración correcta", "Business Suite, cuenta publicitaria, métodos de pago y conexión con tu WhatsApp e Instagram."],
+    ["Objetivos y estrategia", "Qué objetivo elegir según lo que quieres: mensajes, ventas, visitas o seguidores."],
+    ["Público ideal", "Segmentación por ubicación, intereses y públicos personalizados para llegar a quien sí te compraría."],
+    ["Anuncios que venden", "Textos, imágenes y videos que detienen el scroll. Fórmulas simples para escribir tus anuncios."],
+    ["Presupuesto inteligente", "Cuánto invertir para empezar, cómo repartirlo y cuándo subirlo sin desperdiciar dinero."],
+    ["Medición y optimización", "Cómo leer tus resultados, qué métricas importan y qué cambiar cuando algo no funciona."]
+  ],
+  includes: [
+    "Clases paso a paso con pantalla compartida",
+    "Acompañamiento para lanzar tu primera campaña",
+    "Plantillas de textos y checklist de lanzamiento",
+    "Grupo de soporte para resolver dudas",
+    "Certificado de participación"
+  ],
+  faq: [
+    ["¿Necesito experiencia previa?", "No. Empezamos desde cero y avanzamos paso a paso. Solo necesitas una página de Facebook o una cuenta de Instagram de tu negocio."],
+    ["¿Cuánto debo invertir en anuncios?", "Puedes empezar con un presupuesto pequeño. En el curso te enseñamos a definir cuánto invertir según tu negocio y tus metas."],
+    ["¿Sirve para mi tipo de negocio?", "Sí, aplica a negocios de productos o servicios, físicos u online. Los ejemplos se adaptan a casos reales de emprendedores."],
+    ["¿Cómo me inscribo?", "Llena el formulario de esta página y te escribimos por WhatsApp con las fechas, el precio y las formas de pago."]
+  ]
+};
+/* ========================================== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const waLink = text => "https://wa.me/" + CONFIG.whatsapp + (text ? "?text=" + encodeURIComponent(text) : "");
+
+$("brandName").textContent = CONFIG.brand;
+$("footName").textContent = CONFIG.courseName;
+$("year").textContent = new Date().getFullYear();
+$("chips").innerHTML = CONFIG.chips.map(c => '<span class="chip">' + esc(c) + '</span>').join("");
+$("mods").innerHTML = CONFIG.modules.map(([t, d]) => '<div class="mod"><div><h3>' + esc(t) + '</h3><p>' + esc(d) + '</p></div></div>').join("");
+$("includes").innerHTML = CONFIG.includes.map(i => '<li>' + esc(i) + '</li>').join("");
+$("price").textContent = CONFIG.price;
+$("priceMeta").textContent = CONFIG.priceMeta;
+$("faq").innerHTML = CONFIG.faq.map(([q, a]) => '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join("");
+$("fab").href = waLink("Hola, quiero información sobre el " + CONFIG.courseName + ".");
+$("fFine").textContent = "Al enviar, se abrirá WhatsApp con tu mensaje listo para enviar al " + CONFIG.whatsappShown + ".";
+
+$("leadForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const form = e.target;
+  if (form.botcheck.checked) return;
+  const name = $("fName").value.trim(), phone = $("fPhone").value.trim(), email = $("fEmail").value.trim();
+  const err = $("fErr");
+  if (!name) { err.textContent = "Escribe tu nombre."; $("fName").focus(); return; }
+  if (phone.replace(/\D/g, "").length < 7) { err.textContent = "Escribe un número de WhatsApp válido."; $("fPhone").focus(); return; }
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { err.textContent = "Revisa tu correo."; $("fEmail").focus(); return; }
+  err.textContent = "";
+
+  const data = { nombre: name, whatsapp: phone, email: email || "—", negocio: $("fBiz").value.trim() || "—", experiencia: $("fLevel").value, mensaje: $("fMsg").value.trim() || "—" };
+
+  let msg = "Hola, soy " + name + ". Quiero inscribirme en el " + CONFIG.courseName + ".";
+  if (data.negocio !== "—") msg += " Mi negocio: " + data.negocio + ".";
+  msg += " Experiencia: " + data.experiencia + ".";
+  if (data.mensaje !== "—") msg += " " + data.mensaje;
+  const url = waLink(msg);
+
+  // 1) Enviar al correo (si hay clave de Web3Forms)
+  if (CONFIG.web3formsKey) {
+    const btn = $("fBtn"); btn.disabled = true; btn.textContent = "Enviando…";
+    try {
+      const r = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: CONFIG.web3formsKey,
+          subject: "Nueva inscripción: " + name + " · " + CONFIG.courseName,
+          from_name: CONFIG.brand,
+          replyto: email || undefined,
+          ...data
+        })
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.success === false) throw new Error(j.message || "error");
+    } catch (_) {
+      // Si falla el correo, igual seguimos a WhatsApp para no perder al interesado
+    } finally { btn.disabled = false; btn.textContent = "Enviar y continuar por WhatsApp"; }
+  }
+
+  // 2) Continuar por WhatsApp
+  $("waBtn").href = url;
+  $("formFields").hidden = true; $("formDone").hidden = false;
+  form.scrollIntoView({ block: "center" });
+  setTimeout(() => { window.location.href = url; }, 900);
+});
+</script>
+</body>
+</html>
